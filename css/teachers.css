@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.header_container {
+    max-width: 90%;
+    height: 80px;
+    margin: 0 auto; 
+    margin-top: 30px;
+}
+
+.section_container {
+    max-width: 90%;
+    height: 80px;
+    margin: 0 auto; 
+    margin-top: 150px;
+}
+
+.header_content {    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header {
+    position: fixed;  /* This will fix the header at the top */
+    top: 0;           /* Stick it to the very top of the viewport */
+    left: 0;          /* Align it to the left edge */
+    width: 100%;      /* Make the header take up the full width of the page */
+    z-index: 1000;    /* Ensure the header stays on top of other content */
+}
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.nav_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Adjust spacing between links and button */
+}
+.links a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.registracija {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 0px;
+    border-width: 1px;
+    padding: 8px 30px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+
+}
+
+.registracija:hover {
+    box-shadow: 0 6px 7px rgba(0, 0, 0, 0.2);   
+}
+
+
+.registracija:active {
+    transform: scale(1.1);   
+}
+@media (max-width: 768px) {
+    .header_content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Space between logo and menu */
+        
+    }
+
+    .logo {
+        width: 50px; /* Adjust logo size */
+        height: auto;
+    }
+
+    .links {
+        display: none; /* Hide links in mobile view */
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 26px;
+        cursor: pointer;
+        padding-left: 77%;
+    }
+    .registracija{
+        display: none;
+    }
+}
+
+h1{
+    font-weight: lighter;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-size: 61px;
+}
+
+p{
+    font-weight: normal;
+    color: #7C7C7C;
+    font-size: 16px;
+}
+
+.section_content {
+    display: grid;
+    gap: 100px;
+    justify-content: space-around;
+    
+}
+
+.section_content img {
+    width: 100%;
+    max-width: 500px; 
+    height: auto; /* Maintain aspect ratio */
+}
+
+.section_content span {
+    display: flex;
+    gap: 116px; 
+}
