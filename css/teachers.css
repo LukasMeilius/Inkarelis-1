@@ -152,15 +152,23 @@ p {
     margin-top: 10px;
 }
 
+
 .custom_icon {
     float: right;
     font-size: larger;
     margin-left: auto;
 }
+@media (max-width: 768px) {
+    .custom_icon{
+        display: none;
+        
+    }
+}
 
 @media (max-width: 768px) {
     .teachers_grid {
         grid-template-columns: 1fr; 
+        max-width: 90%;
     }
 }
 
