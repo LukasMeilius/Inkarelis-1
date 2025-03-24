@@ -91,6 +91,10 @@ header {
         width: 50px;
         height: auto;
     }
+    .logo_white {
+        width: 80px;
+        height: auto
+    }
 
     .links {
         display: none;
@@ -179,6 +183,29 @@ p {
 
 .teacher h2 {
     padding-top: 20px;
+    color: #1E1E1E;
+}
+
+.footer_container{
+    background-color: #1E1E1E;
+    
+}
+
+
+
+.footer_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    max-width: 90%;
+    margin: auto;
+    height: 400px;
+    align-items: start;
+    
+}
+
+section {
+    margin-bottom: 300px; 
 }
 
 @media (max-width: 768px) {
