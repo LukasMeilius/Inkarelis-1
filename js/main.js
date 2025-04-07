@@ -4,6 +4,7 @@ const openApieMus = document.querySelector('.open-apie-mus');
 const backToMain = document.querySelector('.back-to-main');
 const menuLinks = document.querySelectorAll('.off-screen-menu a');
 const logo = document.querySelector('.logo')
+const anchorLink = document.querySelector('.anchor')
 
 // Reset scroll and hide menu when resizing to desktop
 window.addEventListener('resize', () => {
@@ -50,6 +51,16 @@ menuLinks.forEach(link => {
     }, 300);
   });
 });
+
+anchorLink.addEventListener('click', () => {
+  function scroll() {
+    window.scrollTo({
+      top: 1000,
+      behavior: 'smooth'
+    });
+  }
+  scroll();
+})
 
 
 
