@@ -49,6 +49,32 @@ header {
     height: 120px;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.dropdown_content a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
 
 .links {
     display: flex;
@@ -129,6 +155,25 @@ header {
     .registracija {
         display: none;
     }
+
+    .off-screen-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+      }
+      
+      .off-screen-menu .main-menu {
+        display: block; /* Show main menu by default */
+      }
+      
+      .off-screen-menu.active-apie-mus .main-menu {
+        display: none;
+      }
+      
+      .off-screen-menu.active-apie-mus .apie-mus-menu {
+        display: block;
+      }
 }
 
 
