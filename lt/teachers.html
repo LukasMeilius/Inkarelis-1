@@ -15,29 +15,43 @@
     <header>
         <div class="header_container">
             <div class="header_content">
-                <a href="#"><img class="logo" src="../images/Inkarelis 1.png" alt="logotipas"></a>
+                <a href="http://127.0.0.1:8080/lt/index.html"><img class="logo" src="../images/Inkarelis 1.png" alt="logotipas"></a>
                 <div class="menu-icon">&#9776;</div>
                 <div class="nav_wrapper">
                     <nav class="links">
-                        <a href="#" class="apie_mus">Apie mus</a>
+                        <div class="dropdown">
+                            <a href="#" class="apie_mus" tabindex="0">Apie mus</a>
+                            <div class="dropdown_content">
+                                <a href="#">Studija</a>
+                                <a href="#">Mokytojai</a>
+                                <a href="#">Mūsų vertybės</a>
+                            </div>
+                        </div>
                         <a href="#" class="Tvarkaraščiai">Tvarkaraščiai</a>
                         <a href="#" class="Kainos">Kainos</a>
                         <a href="#" class="Kontaktai">Kontaktai</a>
                         <a href="http://127.0.0.1:8080/en/teachers.html" class="LT">LT</a>
-                    </nav> 
+                    </nav>
                     <a href="#">
                         <button class="registracija">Registracija</button>
-                    </a>                
+                    </a>
+                </div>               
             </div>
         </div>
     </header>
     <div class="off-screen-menu">
-        <ul>
-          <li><a href="#">Apie mus</a></li>
+        <ul class="main-menu">
+          <li><a href="#" class="open-apie-mus">Apie mus</a></li>
           <li><a href="#">Tvarkaraščiai</a></li>
           <li><a href="#">Kainos</a></li>
           <li><a href="#">Kontaktai</a></li>
           <li><a href="http://127.0.0.1:8080/en/teachers.html">LT</a></li>
+        </ul>
+        <ul class="apie-mus-menu">
+          <li><a href="#" class="back-to-main">← Atgal</a></li>
+          <li><a href="#">Apie studiją</a></li>
+          <li><a href="#">Mokytojai</a></li>
+          <li><a href="#">Mūsų vertybės</a></li>
         </ul>
     </div>
     <section>
