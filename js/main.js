@@ -5,6 +5,8 @@ const backToMain = document.querySelector('.back-to-main');
 const menuLinks = document.querySelectorAll('.off-screen-menu a');
 const logo = document.querySelector('.logo')
 const anchorLink = document.querySelector('.anchor')
+const currentFile = window.location.pathname.split('/').pop();
+const isIndexPage = currentFile === 'index.html' || currentFile === '';
 
 // Reset scroll and hide menu when resizing to desktop
 window.addEventListener('resize', () => {
@@ -17,9 +19,13 @@ window.addEventListener('resize', () => {
 // Toggle menu on mobile
 menuIcon.addEventListener('click', () => {
   const isActive = offScreenMenu.classList.toggle('active');
-
-  if (window.matchMedia('(max-width: 768px)').matches) {
+  if (window.matchMedia('(max-width: 768px)').matches && isIndexPage) {
     document.body.style.overflow = isActive ? 'hidden' : 'auto';
+    if(isActive) {
+      anchorLink.style.display = 'none'
+    } else {
+      anchorLink.style.display = 'block';
+    }
   }
 });
 
@@ -52,15 +58,10 @@ menuLinks.forEach(link => {
   });
 });
 
-anchorLink.addEventListener('click', () => {
-  function scroll() {
-    window.scrollTo({
-      top: 1000,
-      behavior: 'smooth'
-    });
-  }
-  scroll();
-})
+// Header color change logic
+
+  
+
 
 
 
