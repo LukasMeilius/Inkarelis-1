@@ -7,6 +7,7 @@
 
 body {
   padding-top: 0;
+  overflow-x: hidden;
   font-family: "Nunito", sans-serif;
 }
 
@@ -31,7 +32,7 @@ h2 {
 
 p {
   font-weight: normal;
-  color: #7C7C7C;
+  color: #7c7c7c;
   font-size: 16px;
   font-family: "Nunito", sans-serif;
 }
@@ -44,7 +45,6 @@ p {
 .off-screen-menu {
   display: none;
 }
-
 
 .header_container {
   max-width: 90%;
@@ -147,7 +147,10 @@ header {
   transform: translateX(-50%) scale(1.2);
 }
 
-.apie_mus_folk:hover, .apie_mus_pop:hover, .apie_mus_show:hover, .apie_mus_kids:hover {
+.apie_mus_folk:hover,
+.apie_mus_pop:hover,
+.apie_mus_show:hover,
+.apie_mus_kids:hover {
   transform: scale(1.1);
   transition: transform 0.4s ease;
 }
@@ -190,7 +193,7 @@ header {
 }
 
 .skaityti_btn {
-  color: #C9A488;
+  color: #c9a488;
   display: inline-flex;
   gap: 5px;
   max-width: 100%;
@@ -199,8 +202,11 @@ header {
   text-decoration: none;
 }
 
+.skaityti_btn:hover {
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}
 .apie_mus_dancer {
-
   height: auto;
 }
 
@@ -216,7 +222,7 @@ header {
   background-color: white;
   min-width: 160px;
   z-index: 1;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 10px 0;
 }
@@ -276,7 +282,7 @@ header {
 .section_div {
   width: 100%;
   height: 400px;
-  background-image: url('../images/section_div.png');
+  background-image: url("../images/section_div.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -285,7 +291,7 @@ header {
   align-items: center;
   position: relative;
   margin: 150px 0;
-  gap: 120px; /* space between icons */
+  gap: 120px; 
 }
 
 .section_div .item {
@@ -298,21 +304,19 @@ header {
 .section_div .item img {
   width: 120px;
   height: 100px;
-  object-fit: contain; /* or 'cover', depending on desired effect */
+  object-fit: contain; 
   margin-bottom: 20px;
 }
 
 .section_div .item h3 {
-  color: white; /* or any color */
+  color: white;
   font-size: 22px;
   font-weight: 600;
   font-family: "Nunito", sans-serif;
   margin: 0;
 }
 
-
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .section_div {
     flex-direction: column;
     height: auto;
@@ -351,6 +355,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .treneriai_container h3 {
@@ -364,8 +369,8 @@ header {
 .skaityti_placiau {
   display: inline-block;
   padding: 12px 30px;
-  border: 1px solid #C9A488;
-  color:#C9A488;
+  border: 1px solid #c9a488;
+  color: #c9a488;
   text-decoration: none;
   transition: 0.3s ease;
   border-radius: 0;
@@ -380,14 +385,14 @@ header {
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .treneriai_container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .treneriai_container h3{
+  .treneriai_container h3 {
     padding-top: 10px;
     padding-bottom: 15px;
   }
@@ -402,17 +407,23 @@ header {
 
 /* ======= Footer ======= */
 .footer_container {
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
+  width: 100%;
+  overflow: hidden;
 }
 
 .footer_content {
+  flex-wrap: wrap;
   display: flex;
-  gap: 150px;
+  gap: 150px; /* reduce gap from 150px */
   max-width: 90%;
   margin: auto;
-  height: 400px;
-  align-items: start;
+  padding: 40px 20px; /* add consistent horizontal padding */
+  align-items: flex-start;
+  height: auto; /* let it grow based on content */
+  overflow-x: hidden; /* prevent horizontal overflow */
 }
+
 
 .footer_content p,
 .footer_content a,
@@ -424,7 +435,7 @@ header {
   margin-bottom: 8px;
 }
 
-.footer_content p{
+.footer_content p {
   max-width: 440px;
 }
 
@@ -460,7 +471,7 @@ header {
 hr {
   border: none;
   height: 0.1px;
-  background-color: #C9A488;
+  background-color: #c9a488;
   width: 90%;
   margin: 0 auto;
 }
@@ -485,7 +496,7 @@ hr {
 }
 
 /* ======= Mobile and Responsive ======= */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   /* Header */
   header {
     height: 100px;
@@ -552,7 +563,6 @@ hr {
     width: 100%;
     text-align: center;
   }
-  
 
   .off-screen-menu li {
     margin: 16px 0;
@@ -571,16 +581,16 @@ hr {
 
   .off-screen-menu a:hover {
     transform: scale(1.3);
-    color: #C9A488;
+    color: #c9a488;
   }
   .off-screen-menu .main-menu {
     display: block; /* Show main menu by default */
   }
-  
+
   .off-screen-menu.active-apie-mus .main-menu {
     display: none;
   }
-  
+
   .off-screen-menu.active-apie-mus .apie-mus-menu {
     display: block;
   }
@@ -630,7 +640,7 @@ hr {
     font-size: 12px;
     font-family: "Nunito", sans-serif;
     text-align: start;
-}
+  }
 
   .apie_mus_flex img {
     display: none;
@@ -639,7 +649,7 @@ hr {
   .skaityti_btn {
     margin: 20px auto 0;
     display: flex;
-    text-align: start;  
+    text-align: start;
     text-decoration: none;
     font-size: 12px;
   }

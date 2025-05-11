@@ -155,14 +155,14 @@ header {
     margin: 0 auto;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .tvarkarastis_heading img {
       width: 100%;
     }
   }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     header {
         height: 100px;
     }
@@ -236,7 +236,7 @@ header {
     gap: 150px;
     max-width: 90%;
     margin: auto;
-    height: 400px;
+    min-height: 400px;
     align-items: start;
     
 }
@@ -311,7 +311,7 @@ hr {
     margin-top: 50px; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .footer_content {
         display: grid;
         grid-template-columns: 1fr; 
