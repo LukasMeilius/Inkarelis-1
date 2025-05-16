@@ -418,6 +418,7 @@ hr {
 
   hr {
     margin: 0 auto;
+    height: 1px !important;
   }
 
   .custom_icon {
