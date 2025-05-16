@@ -59,9 +59,10 @@ menuLinks.forEach((link) => {
 });
 
 if (
-  window.location.pathname.endsWith("/Inkarelis-1/") ||
-  window.location.pathname.endsWith("index.html") ||
-  window.location.pathname === "/"
+  window.location.pathname === "/" || // local root
+  window.location.pathname.endsWith("/Inkarelis-1/") || // GitHub Pages root
+  window.location.pathname.endsWith("/Inkarelis-1/index.html") || // full index path on GitHub Pages
+  window.location.pathname.endsWith("index.html") // fallback for local dev
 ) {
   window.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector("header");
