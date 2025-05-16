@@ -177,6 +177,13 @@ header {
   font-size: 0.95em;
 }
 
+a[href^="tel"] {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
 .info_2 {
   display: flex;
   justify-content: center;
