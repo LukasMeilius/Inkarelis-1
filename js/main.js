@@ -59,6 +59,7 @@ menuLinks.forEach((link) => {
 });
 
 if (
+  window.location.pathname.endsWith("Inkarelis-1") ||
   window.location.pathname.endsWith("index.html") ||
   window.location.pathname === "/"
 ) {
