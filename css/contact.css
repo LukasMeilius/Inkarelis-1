@@ -216,6 +216,10 @@ header {
     text-align: center; /* optional: centers text */
     place-items: center;
   }
+
+  .headingAndText {
+    margin-bottom: 50px !important;
+  }
 }
 
 @media (max-width: 1024px) {
