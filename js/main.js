@@ -91,7 +91,8 @@ if (
       if (sectionTop <= 0) {
         header.style.backgroundColor = "white";
         header.classList.add("scrolled");
-        if (logo) logo.src = "/inkarelis-1/images/Inkarelis_1.png";
+        menuIcon.style.color = "black";
+        if (logo) logo.src = "images/Inkarelis_1.png";
 
         links.forEach((link) => {
           link.style.color = "black";
@@ -104,8 +105,9 @@ if (
         }
       } else {
         header.style.backgroundColor = "transparent";
+        menuIcon.style.color = "white";
         header.classList.remove("scrolled");
-        if (logo) logo.src = "/inkarelis-1/images/Inkarelis_white_1.png";
+        if (logo) logo.src = "images/Inkarelis_white_1.png";
 
         links.forEach((link) => {
           link.style.color = "";
@@ -121,4 +123,3 @@ if (
     });
   });
 }
-

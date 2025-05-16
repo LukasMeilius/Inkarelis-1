@@ -291,7 +291,7 @@ header {
   align-items: center;
   position: relative;
   margin: 150px 0;
-  gap: 120px; 
+  gap: 120px;
 }
 
 .section_div .item {
@@ -304,7 +304,7 @@ header {
 .section_div .item img {
   width: 120px;
   height: 100px;
-  object-fit: contain; 
+  object-fit: contain;
   margin-bottom: 20px;
 }
 
@@ -423,7 +423,6 @@ header {
   height: auto; /* let it grow based on content */
   overflow-x: hidden; /* prevent horizontal overflow */
 }
-
 
 .footer_content p,
 .footer_content a,
