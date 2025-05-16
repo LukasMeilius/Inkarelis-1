@@ -70,6 +70,7 @@ if (
     const button = header.querySelector(".header_btn");
     const logo = document.querySelector(".logo");
     const targetSection = document.querySelector("#apie_mus_section");
+    const chevrons = document.querySelector(".nav-chevron");
 
     if (button) {
       button.addEventListener("mouseenter", () => {
@@ -92,10 +93,10 @@ if (
 
       if (sectionTop <= 0) {
         header.style.backgroundColor = "white";
+        chevrons.style.fill = "black";
         header.classList.add("scrolled");
         menuIcon.style.color = "black";
         if (logo) logo.src = "images/Inkarelis_1.png";
-
         links.forEach((link) => {
           link.style.color = "black";
           link.style.textDecoration = "none";
@@ -106,6 +107,7 @@ if (
           button.style.border = "1px solid black";
         }
       } else {
+        chevrons.style.fill = "white";
         header.style.backgroundColor = "transparent";
         menuIcon.style.color = "white";
         header.classList.remove("scrolled");

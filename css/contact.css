@@ -216,12 +216,21 @@ header {
     text-align: center; /* optional: centers text */
     place-items: center;
   }
-
 }
 
 @media (max-width: 1024px) {
   header {
     height: 100px;
+  }
+
+  .heading_logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .info_2 {
+    padding-bottom: 50px;
   }
 
   .header_content {
@@ -300,7 +309,6 @@ ul {
   font-family: "Nunito", sans-serif;
   text-decoration: none;
   list-style-type: none;
-  margin-bottom: 8px;
 }
 
 .footer_content p {

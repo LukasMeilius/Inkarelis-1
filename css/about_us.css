@@ -108,6 +108,7 @@ header {
 .links a {
   color: black;
   text-decoration: none;
+  margin-bottom: 0px !important;
 }
 
 .registracija {
@@ -328,7 +329,6 @@ ul {
   font-family: "Nunito", sans-serif;
   text-decoration: none;
   list-style-type: none;
-  margin-bottom: 8px;
 }
 
 .footer_content p {

@@ -154,7 +154,7 @@ header {
 .kaina_box {
   background-color: #1e1e1e; /* almost black */
   padding: 40px 30px;
-  width: 380px;
+  max-width: clamp(300px, 50%, 380px);
   margin: 40px auto;
   height: 435px;
   display: flex;
@@ -218,6 +218,10 @@ header {
 @media (max-width: 1024px) {
   header {
     height: 100px;
+  }
+
+  .kainos_heading {
+    margin-bottom: 50px !important;
   }
 
   .header_content {
@@ -297,7 +301,6 @@ ul {
   font-family: "Nunito", sans-serif;
   text-decoration: none;
   list-style-type: none;
-  margin-bottom: 8px;
 }
 
 .footer_content p {
