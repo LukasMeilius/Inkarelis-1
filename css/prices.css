@@ -104,15 +104,18 @@ header {
   text-decoration: none;
 }
 
-.registracija {
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  border-radius: 0px;
-  border-width: 1px;
+.header_btn {
+  display: inline-block;
   padding: 8px 30px;
-  transition: box-shadow 0.3s ease, transform 0.2s ease;
-  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border-radius: 0;
+}
+.header_btn:hover {
+  background-color: #1e1e1e;
+  color: white;
 }
 
 .registracija_price {
@@ -134,13 +137,6 @@ header {
   transform: scale(1.1);
 }
 
-.registracija:hover {
-  box-shadow: 0 6px 7px rgba(0, 0, 0, 0.2);
-}
-
-.registracija:active {
-  transform: scale(1.1);
-}
 
 .kainos_heading {
   text-align: center;
@@ -256,7 +252,7 @@ header {
     justify-content: flex-end;
   }
 
-  .registracija {
+  .header_btn {
     display: none;
   }
 
