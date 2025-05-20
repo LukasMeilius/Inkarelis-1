@@ -62,7 +62,9 @@ if (
   window.location.pathname === "/" || // local root
   window.location.pathname.endsWith("/Inkarelis-1/") || // GitHub Pages root
   window.location.pathname.endsWith("/Inkarelis-1/index.html") || // full index path on GitHub Pages
-  window.location.pathname.endsWith("index.html") // fallback for local dev
+  window.location.pathname.endsWith("index.html") || // fallback for local dev
+  window.location.pathname.endsWith("/en/Inkarelis-1/index.html") ||
+  window.location.pathname.endsWith("/en/index.html")
 ) {
   window.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector("header");
@@ -96,7 +98,7 @@ if (
         chevrons.style.fill = "black";
         header.classList.add("scrolled");
         menuIcon.style.color = "black";
-        if (logo) logo.src = "images/Inkarelis_1.png";
+        if (logo) logo.src = "../images/Inkarelis_1.png";
         links.forEach((link) => {
           link.style.color = "black";
           link.style.textDecoration = "none";
@@ -111,7 +113,7 @@ if (
         header.style.backgroundColor = "transparent";
         menuIcon.style.color = "white";
         header.classList.remove("scrolled");
-        if (logo) logo.src = "images/Inkarelis_white_1.png";
+        if (logo) logo.src = "../images/Inkarelis_white_1.png";
 
         links.forEach((link) => {
           link.style.color = "";

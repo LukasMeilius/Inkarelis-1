@@ -1,197 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Inkarelis</title>
-  <link rel="stylesheet" href="../css/main.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
-  <script src="../js/main.js" defer></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inkarelis</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/main.js" defer></script>
+  </head>
 
-<body>
-  <header>
-    <div class="header_container">
-      <div class="header_content">
-        <a href="#"><img class="logo" src="../images/Inkarelis_white 1.png" alt="logotipas" /></a>
-        <div class="menu-icon">&#9776;</div>
-        <div class="nav_wrapper">
-          <nav class="links">
-            <div class="dropdown">
-              <a href="#" class="apie_mus" tabindex="0">About Us</a>
-              <div class="dropdown_content">
-                <a href="#">Studio</a>
-                <a href="#">Teachers</a>
-                <a href="#">Our values</a>
+  <body>
+    <header>
+      <div class="header_container">
+        <div class="header_content">
+          <a href="../en/index.html"
+            ><img class="logo" src="../images/Inkarelis_white_1.png" alt="logo"
+          /></a>
+          <div class="menu-icon">&#9776;</div>
+          <div class="nav_wrapper">
+            <nav class="links">
+              <div class="dropdown">
+                <a href="../en/about_us.html" class="apie_mus" tabindex="0">
+                  About Us
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="nav-chevron"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                    style="vertical-align: middle"
+                  >
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z" />
+                  </svg>
+                </a>
+                <div class="dropdown_content">
+                  <a href="../en/about_us.html">Studio</a>
+                  <a href="../en/teachers.html">Teachers</a>
+                </div>
               </div>
+              <a href="../en/schedule.html" class="Tvarkaraščiai">Schedule</a>
+              <a href="../en/prices.html" class="Kainos">Prices</a>
+              <a href="../en/contact.html" class="Kontaktai">Contact</a>
+              <a href="../index.html" class="EN">EN</a>
+            </nav>
+            <a href="../en/registration.html" class="header_btn">Register</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="off-screen-menu">
+      <ul class="main-menu">
+        <li><a href="#" class="open-apie-mus">About Us</a></li>
+        <li><a href="../en/schedule.html">Schedule</a></li>
+        <li><a href="../en/prices.html">Prices</a></li>
+        <li><a href="../en/contact.html">Contact</a></li>
+        <li><a href="../en/index.html">LT</a></li>
+      </ul>
+      <ul class="apie-mus-menu">
+        <li><a href="#" class="back-to-main">← Back</a></li>
+        <li><a href="../en/about_us.html">About the Studio</a></li>
+        <li><a href="../en/teachers.html">Teachers</a></li>
+      </ul>
+    </div>
+
+    <section>
+      <div class="hero">
+        <div class="hero_video">
+          <video autoplay muted loop playsinline id="hero-video">
+            <source src="../images/inkarelis_hero.mp4" type="video/mp4" />
+            <source src="../images/inkarelis_hero.webm" type="video/webm" />
+            <source src="../images/inkarelis_hero.ogv" type="video/ogg" />
+          </video>
+        </div>
+        <div class="hero_content">
+          <h1>Start your dance journey with us!</h1>
+          <a href="../en/registration.html" class="hero_btn">Join Now</a>
+        </div>
+        <a href="#apie_mus_section"
+          ><img class="anchor" src="../images/Anchor_icon 1.png" alt="anchor"
+        /></a>
+      </div>
+    </section>
+
+    <section id="apie_mus_section">
+      <div class="apie_mus_container">
+        <div class="apie_mus_content">
+          <div class="apie_mus_column">
+            <h2>About Us</h2>
+            <div class="apie_mus_flex">
+              <img src="../images/Line 1.png" />
+              <p>
+                “Inkarelis” is a dance studio located in the southern part of
+                Klaipėda. The studio takes part in the World Lithuanian and
+                Western Region Song Festivals and is represented in national and
+                international festivals and competitions.<br /><br />
+                “Inkarelis” offers a wide variety of dance styles – there's
+                something for everyone, regardless of age or experience level.
+              </p>
             </div>
-            <a href="#" class="Tvarkaraščiai">Schedules</a>
-            <a href="#" class="Kainos">Prices</a>
-            <a href="#" class="Kontaktai">Contacts</a>
-            <a href="http://127.0.0.1:8080/lt/index.html" class="EN">EN</a>
-          </nav>
-          <a href="#registracija" class="header_btn">Registration</a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div class="off-screen-menu">
-    <ul class="main-menu">
-      <li><a href="#" class="open-apie-mus">About Us</a></li>
-      <li><a href="#">Schedules</a></li>
-      <li><a href="#">Prices</a></li>
-      <li><a href="#">Contacts</a></li>
-      <li><a href="http://127.0.0.1:8080/en/teachers.html">LT</a></li>
-    </ul>
-    <ul class="apie-mus-menu">
-      <li><a href="#" class="back-to-main">← Back</a></li>
-      <li><a href="#">About studio</a></li>
-      <li><a href="#">Teachers</a></li>
-      <li><a href="#">Our Values</a></li>
-    </ul>
-  </div>
-
-  <section>
-    <div class="hero">
-      <div class="hero_video">
-        <video autoplay muted loop playsinline id="hero-video">
-          <source src="../images/inkarelis_hero.mp4" type="video/mp4" />
-          <source src="../images/inkarelis_hero.webm" type="video/webm" />
-          <source src="../images/inkarelis_hero.ogv" type="video/ogg" />
-        </video>
-      </div>
-      <div class="hero_content">
-        <h1>Start your dance journey with us!</h1>
-        <a href="#registracija" class="hero_btn">Join Now</a>
-      </div>
-      <a href="#apie_mus_section"><img class="anchor" src="../images/Anchor_icon 1.png" alt="anchor" /></a>
-    </div>
-  </section>
-
-  <section id="apie_mus_section">
-    <div class="apie_mus_container">
-      <div class="apie_mus_content">
-        <div class="apie_mus_column">
-          <h2>About Us</h2>
-          <div class="apie_mus_flex">
-            <img src="../images/Line 1.png" />
-            <p>
-                Choreography Studio "Inkarėlis" is a dance studio located in the southern part of Klaipėda city. The studio participates in the World Lithuanian and Klaipėda Western Region Song Festivals and represents itself in national and international festivals and competitions.<br> <br>
-                "Inkarėlis" offers a wide variety of dance styles — here, everyone can find the right class for themselves, regardless of age or experience level.
-            </p>
+            <a href="../en/about_us.html" class="skaityti_btn">
+              <img src="../images/skaityti_placiau.png" alt="arrow icon" />
+              Read more
+            </a>
           </div>
-          <a href="#" class="skaityti_btn">
-            <img src="../images/skaityti_placiau.png" alt="arrow icon" />
-            Read more
-          </a>
-        </div>
-        <div class="apie_mus_column">
-          <img class="apie_mus_dancer" src="../images/apie_mus_dancer.jpg" alt="apie_mus_dancer" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="sokiu_stiliai_section">
-    <div class="sokiu_stiliai_heading">
-      <h2>Dance styles</h2>
-    </div>
-    <div class="sokiu_stiliai_container">
-      <div class="apie_mus_pop"><img src="../images/Slice 5.png" /></div>
-      <div class="apie_mus_show"><img src="../images/Slice 3.png" /></div>
-      <div class="apie_mus_folk"><img src="../images/Slice 1 (1).png" /></div>
-      <div class="apie_mus_kids"><img src="../images/Slice 2 (1).png" /></div>
-    </div>
-  </section>
-
-  <section>
-    <div class="section_div">
-      <div class="item">
-        <img src="../images/Students (1).png" />
-        <h3>200+<br />Students</h3>
-      </div>
-      <div class="item">
-        <img src="../images/Vector.png" />
-        <h3>Summer<br />Camps</h3>
-      </div>
-      <div class="item">
-        <img src="../images/Hourglass.png" />
-        <h3>Experienced<br />Teachers</h3>
-      </div>
-    </div>
-  </section>
-  
-  <section id="treneriai_section">
-    <div class="treneriai_heading">
-      <h2>Our Teachers</h2>
-    </div>
-    <div class="treneriai_container">
-      <div class="matas_container">
-        <img src="../images/coach1.png"><h3>Matas Stirbys</h3>
-      </div>
-      <div class="mindaugas_container">
-        <img src="../images/coach2.png"><h3>Mindaugas Padagas</h3>
-      </div>
-      <div class="juste_container">
-        <img src="../images/coach3.png"><h3>Justė Tulickienė  </h3>
-      </div>
-      <div class="donata_container">
-        <img src="../images/coach4.png"><h3>Donata Meiliūtė-Paulauskienė</h3>
-      </div>
-    </div>
-      <a href="#"><button class="skaityti_placiau">Read more</button></a>
-  </section>
-
-  <footer>
-    <div class="footer_container">
-      <div class="footer_content">
-        <div class="footer_column">
-          <a href="#"><img class="logo_white" src="../images/Inkarelis 2.png" alt="logotipas_white" /></a>
-          <div class="footer_paragraph">
-            <p>Choreography studio "Inkarėlis" – a dance studio located in the southern part of Klaipėda – offers students classes in various dance styles.</p>
-          </div>
-          <div class="social_logos">
-            <a target="_blank" href="https://www.instagram.com/inkarelistudio/"><img class="instagram" src="../images/Instagram.png" alt="instagram" /></a>
-            <a target="_blank" href="https://www.facebook.com/choreografijosstudija.inkarelis?locale=lt_LT"><img class="facebook" src="../images/Facebook.png" alt="facebook" /></a>
+          <div class="apie_mus_column">
+            <img
+              class="apie_mus_dancer"
+              src="../images/apie_mus_dancer.jpg"
+              alt="about_us_dancer"
+            />
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="footer_column">
-          <h2>Naršyti</h2>
-          <ul>
-            <li><a href="#">Dance Studio</a></li>
-            <li><a href="#">Dance Styles</a></li>
-            <li><a href="#">Trainers</a></li>
-            <li><a href="#">Schedules</a></li>
-            <li><a href="#">Prices</a></li>
-            <li><a href="#">Registration</a></li>
-          </ul>
+    <section id="sokiu_stiliai_section">
+      <div class="sokiu_stiliai_heading">
+        <h2>Dance Styles</h2>
+      </div>
+      <div class="sokiu_stiliai_container">
+        <div class="apie_mus_pop">
+          <a href="../en/pop_dance.html"><img src="../images/Slice 5.png" /></a>
         </div>
-
-        <div class="footer_column">
-          <h2>Contacts</h2>
-          <p>+370 463 24489</p>
-          <p>+370 462 21906</p>
-          <p>inkarelis@kkljc.lt</p>
+        <div class="apie_mus_show">
+          <a href="../en/show_dance.html"
+            ><img src="../images/Slice 3.png"
+          /></a>
         </div>
-
-        <div class="footer_column">
-          <h2>Laukininkų g. 13, Klaipėda</h2>
-          <img src="../images/Lt_map.png" alt="Map" class="map" />
+        <div class="apie_mus_folk">
+          <a href="../en/folk_dance.html"
+            ><img src="../images/Slice 1 (1).png"
+          /></a>
+        </div>
+        <div class="apie_mus_kids">
+          <a href="../en/kids_dance.html"
+            ><img src="../images/Slice 2 (1).png"
+          /></a>
         </div>
       </div>
+    </section>
 
-      <div class="footer_bottom">
-        <hr />
-        <p class="copyright">
-            Dance Studio "Inkarėlis" © 2025
-        </p>
+    <section>
+      <div class="section_div">
+        <div class="item">
+          <img src="../images/Students (1).png" />
+          <h3>200+<br />Students</h3>
+        </div>
+        <div class="item">
+          <img src="../images/Vector.png" />
+          <h3>Summer<br />Camps</h3>
+        </div>
+        <div class="item">
+          <img src="../images/Hourglass.png" />
+          <h3>Experienced<br />Teachers</h3>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </section>
+
+    <section id="treneriai_section">
+      <div class="treneriai_heading">
+        <h2>Our Teachers</h2>
+      </div>
+      <div class="treneriai_container">
+        <div class="matas_container">
+          <img src="../images/coach1.png" />
+          <h3>Matas Stirbys</h3>
+        </div>
+        <div class="mindaugas_container">
+          <img src="../images/coach2.png" />
+          <h3>Mindaugas Padagas</h3>
+        </div>
+        <div class="juste_container">
+          <img src="../images/coach3.png" />
+          <h3>Justė Tulickienė</h3>
+        </div>
+        <div class="donata_container">
+          <img src="../images/coach4.png" />
+          <h3>Donata Meiliūtė-Paulauskienė</h3>
+        </div>
+      </div>
+      <a href="../en/teachers.html" class="skaityti_placiau">Read more</a>
+    </section>
+
+    <footer>
+      <div class="footer_container">
+        <div class="footer_content">
+          <div class="footer_column">
+            <a href="../en/index.html"
+              ><img
+                class="logo_white"
+                src="../images/Inkarelis 2.png"
+                alt="logo_white"
+            /></a>
+            <div class="footer_paragraph">
+              <p>
+                “Inkarelis” dance studio – located in the southern part of
+                Klaipėda – offers a variety of dance classes for students.
+              </p>
+            </div>
+            <div class="social_logos">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/inkarelistudio/"
+                ><img
+                  class="instagram"
+                  src="../images/Instagram.png"
+                  alt="instagram"
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/choreografijosstudija.inkarelis?locale=lt_LT"
+                ><img
+                  class="facebook"
+                  src="../images/Facebook.png"
+                  alt="facebook"
+              /></a>
+            </div>
+          </div>
+
+          <div class="footer_column">
+            <h2>Explore</h2>
+            <ul>
+              <li><a href="../en/about_us.html">Dance Studio</a></li>
+              <li><a href="#sokiu_stiliai_section">Dance Styles</a></li>
+              <li><a href="../en/teachers.html">Teachers</a></li>
+              <li><a href="../en/schedule.html">Schedule</a></li>
+              <li><a href="../en/prices.html">Prices</a></li>
+              <li><a href="../en/registration.html">Register</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_column">
+            <h2>Contact</h2>
+            <p>+370 463 24489</p>
+            <p>+370 462 21906</p>
+            <p>inkarelis@kkljc.lt</p>
+          </div>
+
+          <div class="footer_column">
+            <h2>Laukininkų g. 13, Klaipėda</h2>
+            <img src="../images/Lt_map.png" alt="Map" class="map" />
+          </div>
+        </div>
+
+        <div class="footer_bottom">
+          <hr />
+          <p class="copyright">“Inkarelis” Dance Studio © 2025.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
