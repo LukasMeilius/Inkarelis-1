@@ -99,6 +99,7 @@ if (
         header.classList.add("scrolled");
         menuIcon.style.color = "black";
         if (logo) logo.src = "../images/Inkarelis_1.png";
+        else if (logo) logo.src = "images/Inkarelis_1.png";
         links.forEach((link) => {
           link.style.color = "black";
           link.style.textDecoration = "none";
@@ -114,6 +115,7 @@ if (
         menuIcon.style.color = "white";
         header.classList.remove("scrolled");
         if (logo) logo.src = "../images/Inkarelis_white_1.png";
+        else if (logo) logo.src = "images/Inkarelis_white_1.png";
 
         links.forEach((link) => {
           link.style.color = "";
