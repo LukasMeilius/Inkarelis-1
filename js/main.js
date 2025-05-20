@@ -98,8 +98,7 @@ if (
         chevrons.style.fill = "black";
         header.classList.add("scrolled");
         menuIcon.style.color = "black";
-        if (logo) logo.src = "../images/Inkarelis_1.png";
-        else if (logo) logo.src = "images/Inkarelis_1.png";
+        if (logo) logo.src = "/Inkarelis-1/images/Inkarelis_1.png";
         links.forEach((link) => {
           link.style.color = "black";
           link.style.textDecoration = "none";
@@ -114,8 +113,7 @@ if (
         header.style.backgroundColor = "transparent";
         menuIcon.style.color = "white";
         header.classList.remove("scrolled");
-        if (logo) logo.src = "../images/Inkarelis_white_1.png";
-        else if (logo) logo.src = "images/Inkarelis_white_1.png";
+        if (logo) logo.src = "/Inkarelis-1/images/Inkarelis_white_1.png";
 
         links.forEach((link) => {
           link.style.color = "";
